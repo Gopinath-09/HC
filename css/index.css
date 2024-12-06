@@ -1,0 +1,299 @@
+@import url(importnavbar.css);
+.bodyar{
+    margin: 0%;
+    padding-top: 0px;
+}
+.introspace{
+    color: var(--color-2);
+    background-image: url(../images/bg.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.intro-img{
+    position: relative;
+    color: var(--color-1);
+    transition: ease-out .5s;
+}
+.introspace .intro-img img{
+    margin: 0%;
+    padding: 0px;
+}
+.intro-img .collapse{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 20px;
+    transition: all .5s;
+    color: var(--color-1);
+}
+.introspace marquee{
+    border-bottom: 2px solid var(--color-2);
+    border-top: 2px solid var(--color-2);
+    color: var(--color-1);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.introspace .intro-col-1 ,.introspace .intro-col-3{
+    padding: 30px;
+}
+.introspace .intro-col-2{
+    position: relative;
+}
+.introspace .intro-col-2 img{
+    position: absolute;
+    width: 200px;
+    margin: 0%;
+    padding: 0%;
+    transition: ease-out .3s;
+}
+.introspace .intro-col-2 img:hover{
+    animation: hacker 1s 1;
+}
+@keyframes hacker {
+    0%{
+        width: 200px;
+        padding-left: 0px;
+        filter: opacity(100%);
+    }
+    25%{
+        width: 300px;
+        padding-left: 30px;
+        filter: opacity(0%);
+    }
+    75%{
+        width: 250px;
+        padding-left: 100px;
+        filter: opacity(0%);
+    }
+    100%{
+        width: 200px;
+        padding-left: 0px;
+        filter: opacity(100%);
+    }
+}
+.introspace .intro-col-2 p{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    color: var(--color-1);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.learn{
+    background-image: url(../images/bg.jpg);
+    background-position: 100%;
+    background-size: cover;
+    padding: 20px 40px;
+    width: 100%;
+    color: var(--color-2);
+    text-align: center;
+    border-top: 2px solid var(--color-1);
+}
+.learn-intro{
+    padding: 30px 0px;
+    color: var(--color-1);
+    border-right: 2px solid var(--color-2);
+}
+.learn-intro h2{
+    animation: lrnhed 5s infinite;
+    color: rgb(250, 97, 8);;
+}
+.learn-img{
+    display: grid;
+    place-content: center;
+}
+.learn-img img{
+    width: fit-content;
+    padding: 15px;
+}
+@keyframes lrnhed {
+    0%{
+        color: rgb(250, 97, 8);
+    }
+    33.33%{
+        color: rgb(18, 169, 230);
+    }
+    66.66%{
+        color: rgb(243, 181, 10);
+    }
+    99.99%{
+        color: rgb(250, 97, 8);
+    }
+    100%{
+        color: rgb(250, 97, 8);
+    }
+}
+@media (max-width: 575px){
+    .learn-intro{
+        border-right: 0;
+    }
+}
+@media (max-width: 750px) {
+    .bodyar{
+        padding-top: 65px;
+    }
+    .intro-img .collapse{
+        position: relative;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .introspace .intro-col-2{
+        display: none;
+    }
+}@import url(importnavbar.css);
+.bodyar{
+    margin: 0%;
+    padding-top: 0px;
+}
+.introspace{
+    color: var(--color-2);
+    background-image: url(../images/bg.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.intro-img{
+    position: relative;
+    color: var(--color-1);
+    transition: ease-out .5s;
+}
+.introspace .intro-img img{
+    margin: 0%;
+    padding: 0px;
+}
+.intro-img .collapse{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 20px;
+    transition: all .5s;
+    color: var(--color-1);
+}
+.introspace marquee{
+    border-bottom: 2px solid var(--color-2);
+    border-top: 2px solid var(--color-2);
+    color: var(--color-1);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.introspace .intro-col-1 ,.introspace .intro-col-3{
+    padding: 30px;
+}
+.introspace .intro-col-2{
+    position: relative;
+}
+.introspace .intro-col-2 img{
+    position: absolute;
+    width: 200px;
+    margin: 0%;
+    padding: 0%;
+    transition: ease-out .3s;
+}
+.introspace .intro-col-2 img:hover{
+    animation: hacker 1s 1;
+}
+@keyframes hacker {
+    0%{
+        width: 200px;
+        padding-left: 0px;
+        filter: opacity(100%);
+    }
+    25%{
+        width: 300px;
+        padding-left: 30px;
+        filter: opacity(0%);
+    }
+    75%{
+        width: 250px;
+        padding-left: 100px;
+        filter: opacity(0%);
+    }
+    100%{
+        width: 200px;
+        padding-left: 0px;
+        filter: opacity(100%);
+    }
+}
+.introspace .intro-col-2 p{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    color: var(--color-1);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.learn{
+    background-image: url(../images/bg.jpg);
+    background-position: 100%;
+    background-size: cover;
+    padding: 20px 40px;
+    width: 100%;
+    color: var(--color-2);
+    text-align: center;
+    border-top: 2px solid var(--color-1);
+}
+.learn-intro{
+    padding: 30px 0px;
+    color: var(--color-1);
+    border-right: 2px solid var(--color-2);
+}
+.learn-intro h2{
+    animation: lrnhed 5s infinite;
+    color: rgb(250, 97, 8);;
+}
+.learn-img{
+    display: grid;
+    place-content: center;
+}
+.learn-img img{
+    width: fit-content;
+    padding: 15px;
+}
+@keyframes lrnhed {
+    0%{
+        color: rgb(250, 97, 8);
+    }
+    33.33%{
+        color: rgb(18, 169, 230);
+    }
+    66.66%{
+        color: rgb(243, 181, 10);
+    }
+    99.99%{
+        color: rgb(250, 97, 8);
+    }
+    100%{
+        color: rgb(250, 97, 8);
+    }
+}
+@media (max-width: 575px){
+    .learn-intro{
+        border-right: 0;
+    }
+}
+@media (max-width: 750px) {
+    .bodyar{
+        padding-top: 65px;
+    }
+    .intro-img .collapse{
+        position: relative;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .introspace .intro-col-2{
+        display: none;
+    }
+}

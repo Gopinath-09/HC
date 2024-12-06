@@ -1,0 +1,164 @@
+@import url(importnavbar.css);
+*{
+	margin: 0;
+	font-size: 1rem;
+}
+.bodyar{
+    padding-top: 70px;
+    background-color: var(--color-4);
+}
+.adminform{
+    display: flex;
+    padding: 10px 15% 0px 15%;
+    width: 100%;
+    border-bottom: 2px solid var(--color-2);
+}
+.AdminpageImg{
+    display: flex;
+    place-content: center;
+    width: 100%;
+}
+.adminpgimg{
+    width: 600px;
+}
+.form_place{
+    width: 100%;
+    padding: 50px 0px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.labels{
+    display: flex;
+    place-content: center;
+}
+.butregisign{
+	cursor: pointer;
+    color: var(--color-1);
+	border: 1.5px solid var(--color-3);
+	padding: .5px 4px;
+	margin: 0px 5px;
+	border-radius: 7px;
+    transition: ease-out .7s;
+}
+.butregisign:hover{
+    box-shadow: 0px 0px 15px var(--color-3);
+    transition: all .7s;
+    color: var(--color-3);
+}
+.regis,.sign{
+	padding: 20px;
+    margin: 10px 0%;
+    border: 2px solid var(--color-2);
+    border-radius: 40px;
+    background-image: url(../images/bg.jpg);
+    background-position: 100%;
+    background-size: cover;
+}
+.regis input,.sign input{
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--color-3);
+    color: var(--color-1);
+    background-color: var(--color-4);
+    transition: ease-out .7s;
+}
+.regis #submit,.sign #submit{
+    padding: 2px 6px;
+    color: var(--color-1);
+    background-color: var(--color-4);
+    border: 1.5px solid var(--color-3);
+    border-radius: 7px;
+    transition: ease-out .7s;
+}
+.regis #submit:hover,.sign #submit:hover,.regis input:hover,.sign input:hover{
+    box-shadow: 0px 0px 15px var(--color-3);
+    transition: all .7s;
+    color: var(--color-3);
+}
+.regis h4,.sign h4,.dpp h4{
+    animation: formh4 5s infinite;
+}
+@keyframes formh4 {
+    0%{
+        color: rgb(250, 97, 8);
+    }
+    33.33%{
+        color: rgb(18, 169, 230);
+    }
+    66.66%{
+        color: rgb(243, 181, 10);
+    }
+    99.99%{
+        color: rgb(250, 97, 8);
+    }
+    100%{
+        color: rgb(250, 97, 8);
+    }
+}
+#checkboxregisign:not(:checked)~.sign,#checkboxregisign:checked~.regis,#checkboxregisign{
+	display: none;
+}
+#checkboxregisign:checked~.sign{
+	display: block;
+}
+.dpp{
+    padding: 50px 0px;
+    background:linear-gradient(to top,black 20%,rgb(34, 33, 33) 80%);
+}
+.dpp h4{
+    display: grid;
+    place-content: center;
+}
+.dpp .dpp_list{
+    display: flex;
+}
+.dpp p{
+    color: var(--color-1);
+    word-wrap: break-word;
+    display: grid;
+    place-content:center right;
+    text-align: right;
+    padding: 10px 25px;
+    width: 50%;
+    text-transform: uppercase;
+    border-right: 1px solid var(--color-1);
+}
+.dpp p a{
+    color: var(--color-3);
+    transition: ease-out .5s;
+}
+.dpp p a:hover{
+    color: var(--color-2);
+    transition: all .5s;
+}
+.dpp ul li{
+    margin: 15px 0px;
+}
+.dpp ul li a{
+    transition: ease-out .5s;
+}
+.dpp ul li a:hover{
+    color: var(--color-3);
+    transition: all .5s;
+}
+.dpp ul{
+    width:50%;
+}
+@media (max-width:750px) {
+    .adminform{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        border-bottom: none;
+    }
+    .form_place{
+        width: 100%;
+        padding: 0px 0px 50px 0px;
+        background:linear-gradient(to bottom left,black 50%,rgb(34, 33, 33) 50%);
+        border-bottom: 2px solid var(--color-2);
+    }
+    .dpp{
+        background:linear-gradient(to top right,black 50%,rgb(34, 33, 33) 50%);
+    }
+}

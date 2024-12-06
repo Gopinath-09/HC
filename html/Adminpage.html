@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DWeb</title>
+
+    <script src="https://kit.fontawesome.com/365a6fcacb.js" crossorigin="anonymous"></script>
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+    <link rel="stylesheet" href="../btsp/css/bootstrap.min.css">
+
+    <script src="../btsp/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/adminpage.css">
+
+</head>
+
+<body>
+
+    <header id="top">
+
+        <div class="hanger">
+
+            <input type="checkbox" id="hangerbox">
+
+            <div class="hangerlinks">
+
+                <span><a href="#">ADMIN BLOG</a></span>
+
+                <span id="bars">|</span>
+
+                <span><a href="#">ADMIN BLOG</a></span>
+
+            </div>
+
+            <label for="hangerbox" class="hangerout"><i class="fa-solid fa-angles-right"></i></label>
+
+        </div>
+
+        <nav class="nvbar">
+
+            <input type="checkbox" id="respbox">
+
+            <label for="respbox" class="nvbar-menu"><i class="fa-solid fa-bars"></i></label>
+
+            <div class="nvbar-brand">
+
+                <a href="../index.html"><img src="../images/navbar-logo.png" alt="" class="brand-img"></a>
+
+            </div>
+
+            <div class="nvbar-nv">
+
+                <ul class="nv-item">
+
+                    <li class="nv-link"><a href="#dpp_list">DEVELOPERS | PUBLIC PAGE</a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="bodyar">
+
+        <div class="adminform">
+
+            <div class="row AdminpageImg">
+
+                <img class="img-responsive adminpgimg" src="../images/coatgunurra.jpg">
+
+            </div>
+
+            <div class="form_place">
+
+                <input type="checkbox" id="checkboxregisign">
+
+                <div class="regis">
+
+                    <h4>REGISTER</h4><br>
+
+                    <form action="../DBserver/register.php" method="post">
+
+                        <input type="email" name="email" placeholder="Enter Email" required><br><br>
+
+                        <input type="password" name="pass" placeholder="Enter Password" minlength="8" maxlength="10" required><br><br>
+
+                        <input type="password" name="cpass" placeholder="Enter Confirm Password" minlength="8" maxlength="10" required><br><br>
+
+                        <input id="submit" type="submit" name="Register" value="Register">
+
+                    </form>
+
+                </div>
+
+                <div class="sign">
+
+                    <h4>SIGN-IN</h4><br>
+
+                    <form action="../DBserver/signin.php" method="post">
+
+                        <input type="email" name="email" placeholder="Enter Email" required><br><br>
+
+                        <input type="password" name="pass" placeholder="Enter Password" minlength="8" maxlength="10" required><br><br>
+
+                        <input id="submit" type="submit" name="Signin" value="Signin">
+
+                    </form>
+
+                </div>
+
+                <span class="labels">
+
+                    <label class="butregisign" for="checkboxregisign">Register | Sign-in</label>
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="dpp">
+
+            <h4>DEVELOPERS | PUBLIC PAGE</h4>
+
+            <div id="dpp_list" class="dpp_list">
+
+                <p>Private Site Developers Please Login To View Your Site.<br><a href="#top">-Click Here-</a></p>
+
+                <ul>
+
+                    <li><a href="#">GOPINATH</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
